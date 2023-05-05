@@ -1,7 +1,7 @@
 // get elements
 const countSpan = document.getElementById('count');
-const incrementButton = document.getElementById('increment');
-const decrementButton = document.getElementById('decrement');
+const incrementButton = document.querySelector('#increment');
+const decrementButton = document.querySelector('#decrement');
 
 // set up state
 let count = 0;

@@ -8,25 +8,32 @@ const incrementButton = document.querySelector('#increment');
 const decrementButton = document.querySelector('#decrement');
 
 
-countSpan.innerText = 0;
+
+let count = 0;
+countSpan.innerText = count;
 
 
-
-
-
-
-// A decrement button that subtracts 1 from the current count and updates the display.
-
-
-decrement.addEventListener('click', () => {
-  console.log('decrement button clicked');
-});
-
-// An increment button that adds 1 to the current count and updates the display.
-
-
+// A increment button that subtracts 1 from the current count and updates the display.
 
 
 increment.addEventListener('click', () => {
-  console.log('increment button clicked');
+  countSpan.innerText = count;
+  console.log({count});
+  count ++;
+ 
+
 });
+
+
+decrement.addEventListener('click', () => {
+  countSpan.innerText = count;
+  console.log("count: " + count);
+  count --;
+
+});
+
+// An decrement button that adds 1 to the current count and updates the display.
+
+
+
+
